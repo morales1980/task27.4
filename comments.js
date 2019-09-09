@@ -19,16 +19,19 @@ function comments(state =[], action) {
       return state.filter(comment => comment.id !== action.id);
 
     case EDIT_COMMENT:
-      const allComments = state;
-      return (allComments.find(comment => comment.id === action.id)).text = action.text;
+      const newState = state;
+      (newState.find(comment => comment.id === action.id)).text = action.text;
+      return newState;
 
     case THUMB_UP_COMMENT:
-      const allComments = state;
-      return (allComments.find(comment => comment.id === action.id)).votes++;
+      const newState = state;
+      (newState.find(comment => comment.id === action.id)).votes++;
+      return newState;
 
     case THUMB_DOWN_COMMENT:
-      const allComments = state;
-      return return (allComments.find(comment => comment.id === action.id)).votes--;
+      const newState = state;
+      (newState.find(comment => comment.id === action.id)).votes--;
+      return newState;
 
     default:
       return state;
