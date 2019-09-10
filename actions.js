@@ -1,11 +1,11 @@
 import uuid from uuid;
 
 //action types
-export const ADD_COMMENT = 'ADD_COMMENT';
-export const EDIT_COMMENT = 'EDIT_COMMENT';
-export const REMOVE_COMMENT = 'REMOVE_COMMENT';
-export const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
-export const THUMB_DOWN_COMMENT; = 'THUMB_DOWN_COMMENT';
+const ADD_COMMENT = 'ADD_COMMENT';
+const EDIT_COMMENT = 'EDIT_COMMENT';
+const REMOVE_COMMENT = 'REMOVE_COMMENT';
+const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
+const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
 //action creators
 function addComment(comment) {
@@ -44,3 +44,13 @@ function thumbsDownComment(id) {
     id: id
   }
 }
+export ADD_COMMENT
+export addComment;
+export EDIT_COMMENT;
+export editComment;
+export REMOVE_COMMENT;
+export removeComment;
+export THUMB_UP_COMMENT;
+export thumbsUpComment;
+export THUMB_DOWN_COMMENT;
+export thumbsDownComment;
